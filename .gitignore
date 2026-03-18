@@ -1,3 +1,15 @@
+# Vector Database (ChromaDB)
+data/
+chroma_db/
+
+# Model Weights (YOLO, v.v.)
+models/*.pt
+models/*.onnx
+weights/
+
+# Temporary AI outputs
+outputs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
