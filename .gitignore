@@ -1,6 +1,4 @@
-# Vector Database (ChromaDB)
-data/
-chroma_db/
+documents.txt
 
 # Model Weights (YOLO, v.v.)
 models/*.pt

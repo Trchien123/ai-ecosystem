@@ -1,0 +1,17 @@
+[project]
+name = "shared-utils"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "openai>=2.29.0",
+    "pinecone>=8.1.0",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.13.1"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["shared_utils"]
