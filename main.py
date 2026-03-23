@@ -1,7 +1,6 @@
 import uvicorn
 import os
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 # Import router
 from apps.career_agent.src.router import router as career_router
 
@@ -9,20 +8,6 @@ app = FastAPI(
     title="Chien's AI Ecosystem",
     description="Huynh Trung Chien AI Ecosystem",
     version="1.0.0"
-)
-
-# add CORs middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "https://huynhtrungchien.dev",
-        "https://www.huynhtrungchien.dev"
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
 )
 
 # Register the path
