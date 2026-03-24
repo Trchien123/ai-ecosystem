@@ -23,6 +23,8 @@ class Settings(BaseSettings):
 
     # Database Setting
     PINECONE_INDEX_NAME: str
+    MONGO_DB_URI: str
+    MONGO_DB_NAME: str
 
     # Pydantic configuration
     model_config = SettingsConfigDict(
